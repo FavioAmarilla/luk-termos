@@ -1,0 +1,2554 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4980ADBC-DB1E-4A41-925B-4794970F8C58}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Luk</RootNamespace>
+    <AssemblyName>Luk</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <NoWarn>41999,42016,42017,42018,42019,42032,42036</NoWarn>
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <NoWarn>41999,42016,42017,42018,42019,42032,42036</NoWarn>
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Luk.My.MyApplication</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v16.1" />
+    <Reference Include="DevExpress.Charts.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v16.1" />
+    <Reference Include="DevExpress.Office.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.1" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core" />
+    <Reference Include="DevExpress.Utils.v16.1.UI, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.1.Extensions, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.1.UI, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.1.Wizard, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v16.1" />
+    <Reference Include="DevExpress.XtraGauges.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v16.1.Extensions, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Npgsql">
+      <HintPath>C:\Program Files (x86)\PostgreSQL\Npgsql\bin\net45\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="conexiones\conexion.vb" />
+    <Compile Include="data_set\dts_articulos_familia.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_articulos_familia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_asignacion_emp_ped.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_asignacion_emp_ped.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_asignacion_emp_ped.vb">
+      <DependentUpon>dts_asignacion_emp_ped.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_cobros_caja.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_cobros_caja.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_codigo_barras.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_codigo_barras.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_compras.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_compras.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_compras.vb">
+      <DependentUpon>dts_compras.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_compras_detalle.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_compras_detalle.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_denominaciones.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_denominaciones.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_denominaciones.vb">
+      <DependentUpon>dts_denominaciones.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_empleados_pedido.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_empleados_pedido.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_existencia_stock_items.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_existencia_stock_items.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_formas_pago.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_formas_pago.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_items_compra.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_items_compra.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_items_compra.vb">
+      <DependentUpon>dts_items_compra.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_items_venta.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_items_venta.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_liquidaciones_mano_obra.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_liquidaciones_mano_obra.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_liquidaciones_mano_obra.vb">
+      <DependentUpon>dts_liquidaciones_mano_obra.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_liquidacion_vendedores.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_liquidacion_vendedores.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_liquidacion_vendedores.vb">
+      <DependentUpon>dts_liquidacion_vendedores.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_material_familia.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_material_familia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_movim_stock_item.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_movim_stock_item.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_mv_stock_general.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_mv_stock_general.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_nota_pedido.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_nota_pedido.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_pedidos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_pedidos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_pedidos.vb">
+      <DependentUpon>dts_pedidos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_pedidos_en_produccion.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_pedidos_en_produccion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_produccion.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_produccion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_ranking_compras.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_ranking_compras.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_ranking_compras.vb">
+      <DependentUpon>dts_ranking_compras.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_ranking_ventas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_ranking_ventas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_resumen_mensual.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_resumen_mensual.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_ventas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_ventas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_ventas.vb">
+      <DependentUpon>dts_ventas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_ventas_proveedor.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_ventas_proveedor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_set\dts_ventas_vs_costo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dts_ventas_vs_costo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_actualizar_familia.designer.vb">
+      <DependentUpon>frm_actualizar_familia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_actualizar_familia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_actualizar_familia_materia_prima.Designer.vb">
+      <DependentUpon>frm_actualizar_familia_materia_prima.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_actualizar_familia_materia_prima.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_apertura_caja.Designer.vb">
+      <DependentUpon>frm_apertura_caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_apertura_caja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_articulos.designer.vb">
+      <DependentUpon>frm_articulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_articulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_asignar_empleados_pedidos.Designer.vb">
+      <DependentUpon>frm_asignar_empleados_pedidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_asignar_empleados_pedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_cerrar_controles.Designer.vb">
+      <DependentUpon>frm_cerrar_controles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_cerrar_controles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_cierre_caja.Designer.vb">
+      <DependentUpon>frm_cierre_caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_cierre_caja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_cobros_caja.Designer.vb">
+      <DependentUpon>frm_cobros_caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_cobros_caja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_comision_vendedor.Designer.vb">
+      <DependentUpon>frm_comision_vendedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_comision_vendedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_compras.designer.vb">
+      <DependentUpon>frm_compras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_compras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_controles_caja.Designer.vb">
+      <DependentUpon>frm_controles_caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_controles_caja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_clientes.Designer.vb">
+      <DependentUpon>frm_clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_costear_pedido.Designer.vb">
+      <DependentUpon>frm_costear_pedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_costear_pedido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_costeo_pedido.Designer.vb">
+      <DependentUpon>frm_costeo_pedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_costeo_pedido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_empleados.designer.vb">
+      <DependentUpon>frm_empleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_empleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_empresas.Designer.vb">
+      <DependentUpon>frm_empresas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_empresas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_existencia_en_stock.Designer.vb">
+      <DependentUpon>frm_existencia_en_stock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_existencia_en_stock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_extraccion_efectivo.Designer.vb">
+      <DependentUpon>frm_extraccion_efectivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_extraccion_efectivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_familias.designer.vb">
+      <DependentUpon>frm_familias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_familias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_familias_materia_prima.designer.vb">
+      <DependentUpon>frm_familias_materia_prima.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_familias_materia_prima.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_formas_pago.Designer.vb">
+      <DependentUpon>frm_formas_pago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_formas_pago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_grafico_ventas.Designer.vb">
+      <DependentUpon>frm_grafico_ventas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_grafico_ventas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_historial_precio_venta.Designer.vb">
+      <DependentUpon>frm_historial_precio_venta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_historial_precio_venta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_impresion_cod_barras.Designer.vb">
+      <DependentUpon>frm_impresion_cod_barras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_impresion_cod_barras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_impresion_plantilla_cod_barras.Designer.vb">
+      <DependentUpon>frm_impresion_plantilla_cod_barras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_impresion_plantilla_cod_barras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_items_liquidacion_mano_obra.designer.vb">
+      <DependentUpon>frm_items_liquidacion_mano_obra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_items_liquidacion_mano_obra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_items_liquidacion_vendedores.designer.vb">
+      <DependentUpon>frm_items_liquidacion_vendedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_items_liquidacion_vendedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_liquidacion_mano_obra.designer.vb">
+      <DependentUpon>frm_liquidacion_mano_obra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_liquidacion_mano_obra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_liquidacion_vendedores.Designer.vb">
+      <DependentUpon>frm_liquidacion_vendedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_liquidacion_vendedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_listado_articulos.designer.vb">
+      <DependentUpon>frm_listado_articulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_listado_articulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_listado_articulos_gru_proveedor.Designer.vb">
+      <DependentUpon>frm_listado_articulos_gru_proveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_listado_articulos_gru_proveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_listado_compras.Designer.vb">
+      <DependentUpon>frm_listado_compras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_listado_compras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_listado_pedidos.Designer.vb">
+      <DependentUpon>frm_listado_pedidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_listado_pedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_login.designer.vb">
+      <DependentUpon>frm_login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_main.designer.vb">
+      <DependentUpon>frm_main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_materiales.designer.vb">
+      <DependentUpon>frm_materiales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_materiales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_modificar_precio_venta.Designer.vb">
+      <DependentUpon>frm_modificar_precio_venta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_modificar_precio_venta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_movimientos_stock.designer.vb">
+      <DependentUpon>frm_movimientos_stock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_movimientos_stock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_movimientos_stock_items.Designer.vb">
+      <DependentUpon>frm_movimientos_stock_items.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_movimientos_stock_items.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_notas_credito.Designer.vb">
+      <DependentUpon>frm_notas_credito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_notas_credito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_nueva_familia.designer.vb">
+      <DependentUpon>frm_nueva_familia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_nueva_familia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_nueva_familia_materia_prima.designer.vb">
+      <DependentUpon>frm_nueva_familia_materia_prima.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_nueva_familia_materia_prima.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_pago_facturas.Designer.vb">
+      <DependentUpon>frm_pago_facturas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_pago_facturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_pedidos.designer.vb">
+      <DependentUpon>frm_pedidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_pedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_permisos.Designer.vb">
+      <DependentUpon>frm_permisos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_permisos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_permisos_usuarios.Designer.vb">
+      <DependentUpon>frm_permisos_usuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_permisos_usuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_proveedores.Designer.vb">
+      <DependentUpon>frm_proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_ranking_compras.Designer.vb">
+      <DependentUpon>frm_ranking_compras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_ranking_compras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_ranking_ventas.Designer.vb">
+      <DependentUpon>frm_ranking_ventas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_ranking_ventas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_recepcion_produccion.Designer.vb">
+      <DependentUpon>frm_recepcion_produccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_recepcion_produccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_recibos.Designer.vb">
+      <DependentUpon>frm_recibos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_recibos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_reimpresion_recibos.Designer.vb">
+      <DependentUpon>frm_reimpresion_recibos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_reimpresion_recibos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_saldo_stock.Designer.vb">
+      <DependentUpon>frm_saldo_stock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_saldo_stock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_stock_articulos.Designer.vb">
+      <DependentUpon>frm_stock_articulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_stock_articulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_stock_valorizado.Designer.vb">
+      <DependentUpon>frm_stock_valorizado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_stock_valorizado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_sucursales.Designer.vb">
+      <DependentUpon>frm_sucursales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_sucursales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_timbrados.Designer.vb">
+      <DependentUpon>frm_timbrados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_timbrados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_tipos_compra.Designer.vb">
+      <DependentUpon>frm_tipos_compra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_tipos_compra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_tipos_comprobante.Designer.vb">
+      <DependentUpon>frm_tipos_comprobante.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_tipos_comprobante.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_tipos_impuesto.Designer.vb">
+      <DependentUpon>frm_tipos_impuesto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_tipos_impuesto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_traspaso_articulo_prov.Designer.vb">
+      <DependentUpon>frm_traspaso_articulo_prov.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_traspaso_articulo_prov.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_traspaso_familias.Designer.vb">
+      <DependentUpon>frm_traspaso_familias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_traspaso_familias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_traspaso_materia_prima.Designer.vb">
+      <DependentUpon>frm_traspaso_materia_prima.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_traspaso_materia_prima.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_ventas.Designer.vb">
+      <DependentUpon>frm_ventas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_ventas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vista_articulos.designer.vb">
+      <DependentUpon>frm_vista_articulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vista_articulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vista_asignaciones.Designer.vb">
+      <DependentUpon>frm_vista_asignaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vista_asignaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vista_compras.Designer.vb">
+      <DependentUpon>frm_vista_compras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vista_compras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vista_comprobantes.Designer.vb">
+      <DependentUpon>frm_vista_comprobantes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vista_comprobantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vista_controles_caja.Designer.vb">
+      <DependentUpon>frm_vista_controles_caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vista_controles_caja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vista_controles_cerrados.Designer.vb">
+      <DependentUpon>frm_vista_controles_cerrados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vista_controles_cerrados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vista_familias.designer.vb">
+      <DependentUpon>frm_vista_familias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vista_familias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vista_familias_all.designer.vb">
+      <DependentUpon>frm_vista_familias_all.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vista_familias_all.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vista_familia_materia_prima_all.designer.vb">
+      <DependentUpon>frm_vista_familia_materia_prima_all.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vista_familia_materia_prima_all.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vista_familia_materia_prima.designer.vb">
+      <DependentUpon>frm_vista_familia_materia_prima.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vista_familia_materia_prima.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vista_formas_pago.Designer.vb">
+      <DependentUpon>frm_vista_formas_pago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vista_formas_pago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vista_lineas_padre.Designer.vb">
+      <DependentUpon>frm_vista_lineas_padre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vista_lineas_padre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vista_materiales.designer.vb">
+      <DependentUpon>frm_vista_materiales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vista_materiales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vista_recibos.Designer.vb">
+      <DependentUpon>frm_vista_recibos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vista_recibos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vista_recibos_all.Designer.vb">
+      <DependentUpon>frm_vista_recibos_all.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vista_recibos_all.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vista_sucursales.Designer.vb">
+      <DependentUpon>frm_vista_sucursales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vista_sucursales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vista_tipos_compra.Designer.vb">
+      <DependentUpon>frm_vista_tipos_compra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vista_tipos_compra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_transacciones_stock.Designer.vb">
+      <DependentUpon>frm_transacciones_stock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_transacciones_stock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_usuarios.Designer.vb">
+      <DependentUpon>frm_usuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_usuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vendedores.Designer.vb">
+      <DependentUpon>frm_vendedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vendedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vista_clientes.Designer.vb">
+      <DependentUpon>frm_vista_clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vista_clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vista_empleados.designer.vb">
+      <DependentUpon>frm_vista_empleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vista_empleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vista_pedidos.Designer.vb">
+      <DependentUpon>frm_vista_pedidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vista_pedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vista_proveedores.Designer.vb">
+      <DependentUpon>frm_vista_proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vista_proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vista_tipos_impuesto.Designer.vb">
+      <DependentUpon>frm_vista_tipos_impuesto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vista_tipos_impuesto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vista_transacciones.Designer.vb">
+      <DependentUpon>frm_vista_transacciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vista_transacciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vista_vendedores.Designer.vb">
+      <DependentUpon>frm_vista_vendedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vista_vendedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vista_ventas.Designer.vb">
+      <DependentUpon>frm_vista_ventas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vista_ventas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_vuelto.Designer.vb">
+      <DependentUpon>frm_vuelto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_vuelto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\FrmExistenciaStockItems.Designer.vb">
+      <DependentUpon>FrmExistenciaStockItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\FrmExistenciaStockItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_reporte_mensual.Designer.vb">
+      <DependentUpon>frm_reporte_mensual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_reporte_mensual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_cobros_caja_por_cliente.Designer.vb">
+      <DependentUpon>frm_rpt_cobros_caja_por_cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_cobros_caja_por_cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_cobros_caja.Designer.vb">
+      <DependentUpon>frm_rpt_cobros_caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_cobros_caja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_compras_por_familia.Designer.vb">
+      <DependentUpon>frm_rpt_compras_por_familia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_compras_por_familia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_compras_detalle_por_fecha.Designer.vb">
+      <DependentUpon>frm_rpt_compras_detalle_por_fecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_compras_detalle_por_fecha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_compras_por_fecha.Designer.vb">
+      <DependentUpon>frm_rpt_compras_por_fecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_compras_por_fecha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_compras_por_item.Designer.vb">
+      <DependentUpon>frm_rpt_compras_por_item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_compras_por_item.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_compras_por_proveedores.Designer.vb">
+      <DependentUpon>frm_rpt_compras_por_proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_compras_por_proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_compras_por_tipo_compra.Designer.vb">
+      <DependentUpon>frm_rpt_compras_por_tipo_compra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_compras_por_tipo_compra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_detalle_ventas_por_comprob.Designer.vb">
+      <DependentUpon>frm_rpt_detalle_ventas_por_comprob.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_detalle_ventas_por_comprob.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_pedidos_en_produccion.Designer.vb">
+      <DependentUpon>frm_rpt_pedidos_en_produccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_pedidos_en_produccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_pedidos_recibidos_familia.Designer.vb">
+      <DependentUpon>frm_rpt_pedidos_recibidos_familia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_pedidos_recibidos_familia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_pedidos_recibidos.Designer.vb">
+      <DependentUpon>frm_rpt_pedidos_recibidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_pedidos_recibidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_prodcuccion_ranking_emp.Designer.vb">
+      <DependentUpon>frm_rpt_prodcuccion_ranking_emp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_prodcuccion_ranking_emp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_produccion_por_fecha.Designer.vb">
+      <DependentUpon>frm_rpt_produccion_por_fecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_produccion_por_fecha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_ranking_global_proveedor.Designer.vb">
+      <DependentUpon>frm_rpt_ranking_global_proveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_ranking_global_proveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frm_resumen_caja.Designer.vb">
+      <DependentUpon>frm_resumen_caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frm_resumen_caja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_stock_minimo.Designer.vb">
+      <DependentUpon>frm_rpt_stock_minimo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_stock_minimo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_ventas_por_items.Designer.vb">
+      <DependentUpon>frm_rpt_ventas_por_items.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_ventas_por_items.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_vta_detalle_ventas_por_familia.designer.vb">
+      <DependentUpon>frm_rpt_vta_detalle_ventas_por_familia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_vta_detalle_ventas_por_familia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_vta_detalle_ventas_por_proveedor.Designer.vb">
+      <DependentUpon>frm_rpt_vta_detalle_ventas_por_proveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_vta_detalle_ventas_por_proveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_vta_por_clientes.Designer.vb">
+      <DependentUpon>frm_rpt_vta_por_clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_vta_por_clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_vta_por_condicion.Designer.vb">
+      <DependentUpon>frm_rpt_vta_por_condicion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_vta_por_condicion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_vta_por_fecha.Designer.vb">
+      <DependentUpon>frm_rpt_vta_por_fecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_vta_por_fecha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_vta_por_vendedores.Designer.vb">
+      <DependentUpon>frm_rpt_vta_por_vendedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_vta_por_vendedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_ventas_vs_costo.Designer.vb">
+      <DependentUpon>frm_rpt_ventas_vs_costo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_ventas_vs_costo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_vta_resumen_ventas_por_proveedor.designer.vb">
+      <DependentUpon>frm_rpt_vta_resumen_ventas_por_proveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_vta_resumen_ventas_por_proveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_vta_resumen_ventas_por_proveedor_familia.Designer.vb">
+      <DependentUpon>frm_rpt_vta_resumen_ventas_por_proveedor_familia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_vta_resumen_ventas_por_proveedor_familia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_vta_ventas_formas_pago.Designer.vb">
+      <DependentUpon>frm_rpt_vta_ventas_formas_pago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios_reportes\frm_rpt_vta_ventas_formas_pago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="funciones\func_articulos.vb" />
+    <Compile Include="funciones\func_cobros_caja.vb" />
+    <Compile Include="funciones\func_control_caja.vb" />
+    <Compile Include="funciones\func_empleados.vb" />
+    <Compile Include="funciones\func_recibos.vb" />
+    <Compile Include="funciones\func_equipos_pc.vb" />
+    <Compile Include="funciones\func_extraccion_efectivo.vb" />
+    <Compile Include="funciones\func_facturas_compra.vb" />
+    <Compile Include="funciones\func_asignacion_pedido_empleado.vb" />
+    <Compile Include="funciones\func_clientes.vb" />
+    <Compile Include="funciones\func_compras.vb" />
+    <Compile Include="funciones\func_costeo_pedido.vb" />
+    <Compile Include="funciones\func_empresas.vb" />
+    <Compile Include="funciones\func_familias.vb" />
+    <Compile Include="funciones\func_familias_materia_prima.vb" />
+    <Compile Include="funciones\func_formas_pago.vb" />
+    <Compile Include="funciones\func_liquidacion_vendedores.vb" />
+    <Compile Include="funciones\func_liquidacion_mano_obra.vb" />
+    <Compile Include="funciones\func_materiales.vb" />
+    <Compile Include="funciones\func_movimientos_stock.vb" />
+    <Compile Include="funciones\func_notas_credito.vb" />
+    <Compile Include="funciones\func_pedidos.vb" />
+    <Compile Include="funciones\func_permisos.vb" />
+    <Compile Include="funciones\func_proveedores.vb" />
+    <Compile Include="funciones\func_stock_articulos.vb" />
+    <Compile Include="funciones\func_sucursales.vb" />
+    <Compile Include="funciones\func_timbrados.vb" />
+    <Compile Include="funciones\func_tipos_compra.vb" />
+    <Compile Include="funciones\func_tipos_comprobante.vb" />
+    <Compile Include="funciones\func_tipos_impuesto.vb" />
+    <Compile Include="funciones\func_transacciones_stock.vb" />
+    <Compile Include="funciones\func_usuarios.vb" />
+    <Compile Include="funciones\func_vendedores.vb" />
+    <Compile Include="funciones\func_ventas.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="reportes\rpt_articulos_familia.Designer.vb">
+      <DependentUpon>rpt_articulos_familia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_articulos_familia.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_asignacion_empleado.Designer.vb">
+      <DependentUpon>rpt_asignacion_empleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_asignacion_empleado.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_cierre_caja_formas_pago.Designer.vb">
+      <DependentUpon>rpt_cierre_caja_formas_pago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_cierre_caja_formas_pago.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_cobros_caja.Designer.vb">
+      <DependentUpon>rpt_cobros_caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_cobros_caja.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_cobros_caja_por_cliente.Designer.vb">
+      <DependentUpon>rpt_cobros_caja_por_cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_cobros_caja_por_cliente.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_compras_por_item.Designer.vb">
+      <DependentUpon>rpt_compras_por_item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_compras_por_item.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_detalle_venta_por_comprob.Designer.vb">
+      <DependentUpon>rpt_detalle_venta_por_comprob.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_detalle_venta_por_comprob.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_existencia_stock_items.Designer.vb">
+      <DependentUpon>rpt_existencia_stock_items.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_existencia_stock_items.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_impresion_plantilla_cod_barras.Designer.vb">
+      <DependentUpon>rpt_impresion_plantilla_cod_barras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_impresion_plantilla_cod_barras.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_imp_cod_barras.Designer.vb">
+      <DependentUpon>rpt_imp_cod_barras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_imp_cod_barras.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_items_compra.Designer.vb">
+      <DependentUpon>rpt_items_compra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_items_compra.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_liquidacion_vendedores.Designer.vb">
+      <DependentUpon>rpt_liquidacion_vendedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_liquidacion_vendedores.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_cmp_por_familia.Designer.vb">
+      <DependentUpon>rpt_cmp_por_familia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_cmp_por_familia.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_cmp_por_fecha.Designer.vb">
+      <DependentUpon>rpt_cmp_por_fecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_cmp_por_fecha.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_cmp_por_proveedores.Designer.vb">
+      <DependentUpon>rpt_cmp_por_proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_cmp_por_proveedores.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_cmp_por_tipo_compra.Designer.vb">
+      <DependentUpon>rpt_cmp_por_tipo_compra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_cmp_por_tipo_compra.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_liquidaciones_mano_obra.Designer.vb">
+      <DependentUpon>rpt_liquidaciones_mano_obra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_liquidaciones_mano_obra.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_materiales_familia.Designer.vb">
+      <DependentUpon>rpt_materiales_familia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_materiales_familia.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_matriz_items.Designer.vb">
+      <DependentUpon>rpt_matriz_items.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_matriz_items.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_movim_stock_item.Designer.vb">
+      <DependentUpon>rpt_movim_stock_item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_movim_stock_item.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_mv_stock_general.Designer.vb">
+      <DependentUpon>rpt_mv_stock_general.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_mv_stock_general.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_nota_pedido.Designer.vb">
+      <DependentUpon>rpt_nota_pedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_nota_pedido.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_pedidos_en_produccion.Designer.vb">
+      <DependentUpon>rpt_pedidos_en_produccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_pedidos_en_produccion.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_pedidos_recibidos_familia.Designer.vb">
+      <DependentUpon>rpt_pedidos_recibidos_familia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_pedidos_recibidos_familia.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_pedidos_recibidos.Designer.vb">
+      <DependentUpon>rpt_pedidos_recibidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_pedidos_recibidos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_pedido_cliente.Designer.vb">
+      <DependentUpon>rpt_pedido_cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_pedido_cliente.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_produccion_por_fecha.Designer.vb">
+      <DependentUpon>rpt_produccion_por_fecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_produccion_por_fecha.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_produccion_ranking_emp.Designer.vb">
+      <DependentUpon>rpt_produccion_ranking_emp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_produccion_ranking_emp.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_ranking_compras.Designer.vb">
+      <DependentUpon>rpt_ranking_compras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_ranking_compras.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_ranking_global_proveedores.Designer.vb">
+      <DependentUpon>rpt_ranking_global_proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_ranking_global_proveedores.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_ranking_venta.Designer.vb">
+      <DependentUpon>rpt_ranking_venta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_ranking_venta.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_recibo.Designer.vb">
+      <DependentUpon>rpt_recibo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_recibo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_resumen_caja.Designer.vb">
+      <DependentUpon>rpt_resumen_caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_resumen_caja.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_resumen_mensual.Designer.vb">
+      <DependentUpon>rpt_resumen_mensual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_resumen_mensual.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_stock_valorizado.Designer.vb">
+      <DependentUpon>rpt_stock_valorizado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_stock_valorizado.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_vta_detalle_de_ventas_por_familia.designer.vb">
+      <DependentUpon>rpt_vta_detalle_de_ventas_por_familia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_vta_detalle_de_ventas_por_familia.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_cmp_detalle_por_fecha.Designer.vb">
+      <DependentUpon>rpt_cmp_detalle_por_fecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_cmp_detalle_por_fecha.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_vta_detalle_ventas_por_proveedor.Designer.vb">
+      <DependentUpon>rpt_vta_detalle_ventas_por_proveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_vta_detalle_ventas_por_proveedor.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_vta_por_clientes.Designer.vb">
+      <DependentUpon>rpt_vta_por_clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_vta_por_clientes.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_vta_por_condicion.Designer.vb">
+      <DependentUpon>rpt_vta_por_condicion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_vta_por_condicion.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_vta_por_fecha.Designer.vb">
+      <DependentUpon>rpt_vta_por_fecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_vta_por_fecha.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_vta_por_vendedores.Designer.vb">
+      <DependentUpon>rpt_vta_por_vendedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_vta_por_vendedores.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_ventas_vs_costo.Designer.vb">
+      <DependentUpon>rpt_ventas_vs_costo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_ventas_vs_costo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_vta_resumen_ventas_por_proveedor.designer.vb">
+      <DependentUpon>rpt_vta_resumen_ventas_por_proveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_vta_resumen_ventas_por_proveedor.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_vta_resumen_ventas_por_proveedor_familia.Designer.vb">
+      <DependentUpon>rpt_vta_resumen_ventas_por_proveedor_familia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_vta_resumen_ventas_por_proveedor_familia.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\rpt_vta_ventas_formas_pago.Designer.vb">
+      <DependentUpon>rpt_vta_ventas_formas_pago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\rpt_vta_ventas_formas_pago.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportes\XtraReport1.Designer.vb">
+      <DependentUpon>XtraReport1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\XtraReport1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="util\alerta.vb" />
+    <Compile Include="util\NumeroLetras.vb" />
+    <Compile Include="util\utilidades.vb" />
+    <EmbeddedResource Include="formularios\frm_actualizar_familia.resx">
+      <DependentUpon>frm_actualizar_familia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_actualizar_familia_materia_prima.resx">
+      <DependentUpon>frm_actualizar_familia_materia_prima.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_apertura_caja.resx">
+      <DependentUpon>frm_apertura_caja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_articulos.resx">
+      <DependentUpon>frm_articulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_asignar_empleados_pedidos.resx">
+      <DependentUpon>frm_asignar_empleados_pedidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_cerrar_controles.resx">
+      <DependentUpon>frm_cerrar_controles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_cierre_caja.resx">
+      <DependentUpon>frm_cierre_caja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_clientes.resx">
+      <DependentUpon>frm_clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_cobros_caja.resx">
+      <DependentUpon>frm_cobros_caja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_comision_vendedor.resx">
+      <DependentUpon>frm_comision_vendedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_compras.resx">
+      <DependentUpon>frm_compras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_controles_caja.resx">
+      <DependentUpon>frm_controles_caja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_costear_pedido.resx">
+      <DependentUpon>frm_costear_pedido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_costeo_pedido.resx">
+      <DependentUpon>frm_costeo_pedido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_empleados.resx">
+      <DependentUpon>frm_empleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_empresas.resx">
+      <DependentUpon>frm_empresas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_existencia_en_stock.resx">
+      <DependentUpon>frm_existencia_en_stock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_extraccion_efectivo.resx">
+      <DependentUpon>frm_extraccion_efectivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_familias.resx">
+      <DependentUpon>frm_familias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_familias_materia_prima.resx">
+      <DependentUpon>frm_familias_materia_prima.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_formas_pago.resx">
+      <DependentUpon>frm_formas_pago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_grafico_ventas.resx">
+      <DependentUpon>frm_grafico_ventas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_historial_precio_venta.resx">
+      <DependentUpon>frm_historial_precio_venta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_impresion_cod_barras.resx">
+      <DependentUpon>frm_impresion_cod_barras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_impresion_plantilla_cod_barras.resx">
+      <DependentUpon>frm_impresion_plantilla_cod_barras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_items_liquidacion_mano_obra.resx">
+      <DependentUpon>frm_items_liquidacion_mano_obra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_items_liquidacion_vendedores.resx">
+      <DependentUpon>frm_items_liquidacion_vendedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_liquidacion_mano_obra.resx">
+      <DependentUpon>frm_liquidacion_mano_obra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_liquidacion_vendedores.resx">
+      <DependentUpon>frm_liquidacion_vendedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_listado_articulos.resx">
+      <DependentUpon>frm_listado_articulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_listado_articulos_gru_proveedor.resx">
+      <DependentUpon>frm_listado_articulos_gru_proveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_listado_compras.resx">
+      <DependentUpon>frm_listado_compras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_listado_pedidos.resx">
+      <DependentUpon>frm_listado_pedidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_login.resx">
+      <DependentUpon>frm_login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_main.resx">
+      <DependentUpon>frm_main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_materiales.resx">
+      <DependentUpon>frm_materiales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_modificar_precio_venta.resx">
+      <DependentUpon>frm_modificar_precio_venta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_movimientos_stock.resx">
+      <DependentUpon>frm_movimientos_stock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_movimientos_stock_items.resx">
+      <DependentUpon>frm_movimientos_stock_items.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_notas_credito.resx">
+      <DependentUpon>frm_notas_credito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_nueva_familia.resx">
+      <DependentUpon>frm_nueva_familia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_nueva_familia_materia_prima.resx">
+      <DependentUpon>frm_nueva_familia_materia_prima.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_pago_facturas.resx">
+      <DependentUpon>frm_pago_facturas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_pedidos.resx">
+      <DependentUpon>frm_pedidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_permisos.resx">
+      <DependentUpon>frm_permisos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_permisos_usuarios.resx">
+      <DependentUpon>frm_permisos_usuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_proveedores.resx">
+      <DependentUpon>frm_proveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_ranking_compras.resx">
+      <DependentUpon>frm_ranking_compras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_ranking_ventas.resx">
+      <DependentUpon>frm_ranking_ventas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_recepcion_produccion.resx">
+      <DependentUpon>frm_recepcion_produccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_recibos.resx">
+      <DependentUpon>frm_recibos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_reimpresion_recibos.resx">
+      <DependentUpon>frm_reimpresion_recibos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_saldo_stock.resx">
+      <DependentUpon>frm_saldo_stock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_stock_articulos.resx">
+      <DependentUpon>frm_stock_articulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_stock_valorizado.resx">
+      <DependentUpon>frm_stock_valorizado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_sucursales.resx">
+      <DependentUpon>frm_sucursales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_timbrados.resx">
+      <DependentUpon>frm_timbrados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_tipos_compra.resx">
+      <DependentUpon>frm_tipos_compra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_tipos_comprobante.resx">
+      <DependentUpon>frm_tipos_comprobante.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_tipos_impuesto.resx">
+      <DependentUpon>frm_tipos_impuesto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_traspaso_articulo_prov.resx">
+      <DependentUpon>frm_traspaso_articulo_prov.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_traspaso_familias.resx">
+      <DependentUpon>frm_traspaso_familias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_traspaso_materia_prima.resx">
+      <DependentUpon>frm_traspaso_materia_prima.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_ventas.resx">
+      <DependentUpon>frm_ventas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vista_articulos.resx">
+      <DependentUpon>frm_vista_articulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vista_asignaciones.resx">
+      <DependentUpon>frm_vista_asignaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vista_compras.resx">
+      <DependentUpon>frm_vista_compras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vista_comprobantes.resx">
+      <DependentUpon>frm_vista_comprobantes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vista_controles_caja.resx">
+      <DependentUpon>frm_vista_controles_caja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vista_controles_cerrados.resx">
+      <DependentUpon>frm_vista_controles_cerrados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vista_familias.resx">
+      <DependentUpon>frm_vista_familias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vista_familias_all.resx">
+      <DependentUpon>frm_vista_familias_all.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vista_familia_materia_prima_all.resx">
+      <DependentUpon>frm_vista_familia_materia_prima_all.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vista_familia_materia_prima.resx">
+      <DependentUpon>frm_vista_familia_materia_prima.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vista_formas_pago.resx">
+      <DependentUpon>frm_vista_formas_pago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vista_lineas_padre.resx">
+      <DependentUpon>frm_vista_lineas_padre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vista_materiales.resx">
+      <DependentUpon>frm_vista_materiales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vista_recibos.resx">
+      <DependentUpon>frm_vista_recibos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vista_recibos_all.resx">
+      <DependentUpon>frm_vista_recibos_all.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vista_sucursales.resx">
+      <DependentUpon>frm_vista_sucursales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vista_tipos_compra.resx">
+      <DependentUpon>frm_vista_tipos_compra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_transacciones_stock.resx">
+      <DependentUpon>frm_transacciones_stock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_usuarios.resx">
+      <DependentUpon>frm_usuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vendedores.resx">
+      <DependentUpon>frm_vendedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vista_clientes.resx">
+      <DependentUpon>frm_vista_clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vista_empleados.resx">
+      <DependentUpon>frm_vista_empleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vista_pedidos.resx">
+      <DependentUpon>frm_vista_pedidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vista_proveedores.resx">
+      <DependentUpon>frm_vista_proveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vista_tipos_impuesto.resx">
+      <DependentUpon>frm_vista_tipos_impuesto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vista_transacciones.resx">
+      <DependentUpon>frm_vista_transacciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vista_vendedores.resx">
+      <DependentUpon>frm_vista_vendedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vista_ventas.resx">
+      <DependentUpon>frm_vista_ventas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_vuelto.resx">
+      <DependentUpon>frm_vuelto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\FrmExistenciaStockItems.resx">
+      <DependentUpon>FrmExistenciaStockItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_reporte_mensual.resx">
+      <DependentUpon>frm_reporte_mensual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_cobros_caja_por_cliente.resx">
+      <DependentUpon>frm_rpt_cobros_caja_por_cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_cobros_caja.resx">
+      <DependentUpon>frm_rpt_cobros_caja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_compras_por_familia.resx">
+      <DependentUpon>frm_rpt_compras_por_familia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_compras_detalle_por_fecha.resx">
+      <DependentUpon>frm_rpt_compras_detalle_por_fecha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_compras_por_fecha.resx">
+      <DependentUpon>frm_rpt_compras_por_fecha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_compras_por_item.resx">
+      <DependentUpon>frm_rpt_compras_por_item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_compras_por_proveedores.resx">
+      <DependentUpon>frm_rpt_compras_por_proveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_compras_por_tipo_compra.resx">
+      <DependentUpon>frm_rpt_compras_por_tipo_compra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_detalle_ventas_por_comprob.resx">
+      <DependentUpon>frm_rpt_detalle_ventas_por_comprob.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_pedidos_en_produccion.resx">
+      <DependentUpon>frm_rpt_pedidos_en_produccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_pedidos_recibidos_familia.resx">
+      <DependentUpon>frm_rpt_pedidos_recibidos_familia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_pedidos_recibidos.resx">
+      <DependentUpon>frm_rpt_pedidos_recibidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_prodcuccion_ranking_emp.resx">
+      <DependentUpon>frm_rpt_prodcuccion_ranking_emp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_produccion_por_fecha.resx">
+      <DependentUpon>frm_rpt_produccion_por_fecha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_ranking_global_proveedor.resx">
+      <DependentUpon>frm_rpt_ranking_global_proveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frm_resumen_caja.resx">
+      <DependentUpon>frm_resumen_caja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_stock_minimo.resx">
+      <DependentUpon>frm_rpt_stock_minimo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_ventas_por_items.resx">
+      <DependentUpon>frm_rpt_ventas_por_items.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_vta_detalle_ventas_por_familia.resx">
+      <DependentUpon>frm_rpt_vta_detalle_ventas_por_familia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_vta_detalle_ventas_por_proveedor.resx">
+      <DependentUpon>frm_rpt_vta_detalle_ventas_por_proveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_vta_por_clientes.resx">
+      <DependentUpon>frm_rpt_vta_por_clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_vta_por_condicion.resx">
+      <DependentUpon>frm_rpt_vta_por_condicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_vta_por_fecha.resx">
+      <DependentUpon>frm_rpt_vta_por_fecha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_vta_por_vendedores.resx">
+      <DependentUpon>frm_rpt_vta_por_vendedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_ventas_vs_costo.resx">
+      <DependentUpon>frm_rpt_ventas_vs_costo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_vta_resumen_ventas_por_proveedor.resx">
+      <DependentUpon>frm_rpt_vta_resumen_ventas_por_proveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_vta_resumen_ventas_por_proveedor_familia.resx">
+      <DependentUpon>frm_rpt_vta_resumen_ventas_por_proveedor_familia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios_reportes\frm_rpt_vta_ventas_formas_pago.resx">
+      <DependentUpon>frm_rpt_vta_ventas_formas_pago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="obj\Debug\Luk.FrmExistenciaStockItems.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_actualizar_familia.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_actualizar_familia_materia_prima.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_apertura_caja.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_articulos.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_asignar_empleados_pedidos.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_cerrar_controles.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_cierre_caja.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_clientes.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_cobros_caja.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_comision_vendedor.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_compras.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_controles_caja.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_costear_pedido.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_costeo_pedido.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_empleados.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_empresas.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_existencia_en_stock.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_extraccion_efectivo.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_familias.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_familias_materia_prima.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_formas_pago.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_historial_precio_venta.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_rpt_vta_resumen_ventas_por_proveedor_fecha.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_impresion_plantilla_cod_barras.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_items_liquidacion_mano_obra.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_items_liquidacion_vendedores.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_liquidacion_mano_obra.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_liquidacion_vendedores.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_listado_articulos.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_listado_articulos_gru_proveedor.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_listado_compras.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_listado_pedidos.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_login.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_main.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_materiales.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_modificar_precio_venta.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_movimientos_stock.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_movimientos_stock_items.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_nueva_familia.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_nueva_familia_materia_prima.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_pedidos.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_permisos.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_permisos_usuarios.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_proveedores.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_ranking_compras.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_ranking_ventas.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_recepcion_produccion.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_reporte_mensual.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_rpt_cobros_caja.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_rpt_compras_por_familia.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_rpt_compras_por_fecha.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_rpt_compras_por_item.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_rpt_compras_por_proveedores.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_rpt_compras_por_tipo_compra.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_rpt_detalle_ventas_por_comprob.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_rpt_pedidos_en_produccion.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_rpt_pedidos_recibidos.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_rpt_prodcuccion_ranking_emp.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_rpt_produccion_por_fecha.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_rpt_ranking_global_proveedor.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_rpt_ventas_vs_costo.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_rpt_vta_detalle_ventas_por_familia.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_rpt_vta_detalle_ventas_por_proveedor.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_rpt_vta_por_clientes.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_rpt_vta_por_condicion.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_rpt_vta_por_fecha.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_rpt_vta_por_vendedores.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_rpt_vta_resumen_ventas_por_proveedor.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_rpt_vta_resumen_ventas_por_proveedor_familia.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_saldo_stock.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_stock_articulos.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_stock_valorizado.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_sucursales.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_timbrados.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_tipos_compra.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_tipos_comprobante.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_tipos_impuesto.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_transacciones_stock.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_traspaso_articulo_prov.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_traspaso_familias.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_traspaso_materia_prima.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_usuarios.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_vendedores.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_ventas.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_vista_articulos.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_vista_asignaciones.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_vista_clientes.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_vista_compras.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_vista_controles_caja.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_vista_controles_cerrados.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_vista_empleados.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_vista_familias.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_vista_familia_materia_prima.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_vista_formas_pago.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_vista_lineas_padre.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_vista_materiales.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_vista_pedidos.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_vista_proveedores.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_vista_sucursales.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_vista_tipos_compra.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_vista_tipos_impuesto.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_vista_transacciones.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_vista_vendedores.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_vista_ventas.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.frm_vuelto.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_articulos_familia.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_asignacion_empleado.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_cmp_por_fecha.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_cmp_por_proveedores.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_cmp_por_tipo_compra.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_cobros_caja.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_compras_por_familia.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_compras_por_item.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_detalle_venta_por_comprob.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_existencia_stock_items.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_impresion_plantilla_cod_barras.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_imp_cod_barras.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_items_compra.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_liquidaciones_mano_obra.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_liquidacion_vendedores.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_materiales_familia.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_matriz_items.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_movim_stock_item.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_mv_stock_general.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_nota_pedido.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_pedidos_en_produccion.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_pedidos_recibidos.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_pedido_cliente.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_produccion_por_fecha.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_produccion_ranking_emp.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_ranking_compras.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_ranking_global_proveedores.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_ranking_venta.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_resumen_caja.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_resumen_mensual.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_stock_valorizado.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_ventas_vs_costo.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_vta_detalle_de_ventas_por_familia.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_vta_detalle_ventas_por_proveedor.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_vta_por_clientes.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_vta_por_condicion.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_vta_por_fecha.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_vta_por_vendedores.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_vta_resumen_ventas_por_proveedor.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.rpt_vta_resumen_ventas_por_proveedor_familia.resources" />
+    <EmbeddedResource Include="obj\Debug\Luk.SplashScreen1.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.FrmExistenciaStockItems.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_actualizar_familia.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_actualizar_familia_materia_prima.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_apertura_caja.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_articulos.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_cerrar_controles.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_cierre_caja.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_clientes.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_cobros_caja.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_compras.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_controles_caja.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_costeo_pedido.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_empleados.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_empresas.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_existencia_en_stock.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_extraccion_efectivo.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_familias.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_familias_materia_prima.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_formas_pago.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_historial_precio_venta.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_items_liquidacion_mano_obra.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_items_liquidacion_vendedores.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_liquidacion_mano_obra.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_liquidacion_vendedores.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_listado_articulos.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_listado_articulos_gru_proveedor.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_listado_compras.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_listado_pedidos.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_login.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_main.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_materiales.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_modificar_precio_venta.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_movimientos_stock.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_movimientos_stock_items.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_nueva_familia.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_nueva_familia_materia_prima.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_pedidos.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_permisos.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_permisos_usuarios.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_proveedores.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_ranking_compras.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_ranking_ventas.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_recepcion_produccion.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_reporte_mensual.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_rpt_cobros_caja.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_rpt_compras_por_familia.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_rpt_compras_por_fecha.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_rpt_compras_por_proveedores.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_rpt_compras_por_tipo_compra.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_rpt_pedidos_recibidos.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_rpt_prodcuccion_ranking_emp.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_rpt_produccion_por_fecha.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_rpt_ranking_global_proveedor.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_rpt_ventas_vs_costo.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_rpt_vta_detalle_ventas_por_familia.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_rpt_vta_detalle_ventas_por_proveedor.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_rpt_vta_por_clientes.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_rpt_vta_por_condicion.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_rpt_vta_por_fecha.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_rpt_vta_por_vendedores.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_rpt_vta_resumen_ventas_por_proveedor.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_rpt_vta_resumen_ventas_por_proveedor_familia.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_saldo_stock.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_stock_articulos.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_sucursales.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_timbrados.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_tipos_compra.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_tipos_comprobante.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_tipos_impuesto.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_transacciones_stock.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_traspaso_articulo_prov.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_traspaso_familias.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_traspaso_materia_prima.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_usuarios.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_vendedores.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_ventas.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_vista_articulos.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_vista_asignaciones.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_vista_clientes.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_vista_compras.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_vista_controles_caja.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_vista_controles_cerrados.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_vista_empleados.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_vista_familias.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_vista_familia_materia_prima.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_vista_formas_pago.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_vista_lineas_padre.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_vista_materiales.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_vista_pedidos.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_vista_proveedores.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_vista_sucursales.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_vista_tipos_compra.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_vista_tipos_impuesto.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_vista_transacciones.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_vista_vendedores.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.frm_vuelto.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_articulos_familia.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_cmp_por_fecha.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_cmp_por_proveedores.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_cmp_por_tipo_compra.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_cobros_caja.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_compras_por_familia.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_existencia_stock_items.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_items_compra.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_liquidaciones_mano_obra.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_liquidacion_vendedores.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_materiales_familia.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_movim_stock_item.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_mv_stock_general.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_nota_pedido.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_pedidos_recibidos.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_produccion_por_fecha.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_produccion_ranking_emp.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_ranking_compras.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_ranking_global_proveedores.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_ranking_venta.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_resumen_caja.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_resumen_mensual.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_ventas_vs_costo.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_vta_detalle_de_ventas_por_familia.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_vta_detalle_ventas_por_proveedor.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_vta_por_clientes.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_vta_por_condicion.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_vta_por_fecha.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_vta_por_vendedores.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_vta_resumen_ventas_por_proveedor.resources" />
+    <EmbeddedResource Include="obj\Debug\luk_termos.rpt_vta_resumen_ventas_por_proveedor_familia.resources" />
+    <EmbeddedResource Include="reportes\rpt_articulos_familia.resx">
+      <DependentUpon>rpt_articulos_familia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_asignacion_empleado.resx">
+      <DependentUpon>rpt_asignacion_empleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_cierre_caja_formas_pago.resx">
+      <DependentUpon>rpt_cierre_caja_formas_pago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_cobros_caja.resx">
+      <DependentUpon>rpt_cobros_caja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_cobros_caja_por_cliente.resx">
+      <DependentUpon>rpt_cobros_caja_por_cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_compras_por_item.resx">
+      <DependentUpon>rpt_compras_por_item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_detalle_venta_por_comprob.resx">
+      <DependentUpon>rpt_detalle_venta_por_comprob.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_existencia_stock_items.resx">
+      <DependentUpon>rpt_existencia_stock_items.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_impresion_plantilla_cod_barras.resx">
+      <DependentUpon>rpt_impresion_plantilla_cod_barras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_imp_cod_barras.resx">
+      <DependentUpon>rpt_imp_cod_barras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_items_compra.resx">
+      <DependentUpon>rpt_items_compra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_liquidacion_vendedores.resx">
+      <DependentUpon>rpt_liquidacion_vendedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_cmp_por_familia.resx">
+      <DependentUpon>rpt_cmp_por_familia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_cmp_por_fecha.resx">
+      <DependentUpon>rpt_cmp_por_fecha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_cmp_por_proveedores.resx">
+      <DependentUpon>rpt_cmp_por_proveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_cmp_por_tipo_compra.resx">
+      <DependentUpon>rpt_cmp_por_tipo_compra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_liquidaciones_mano_obra.resx">
+      <DependentUpon>rpt_liquidaciones_mano_obra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_materiales_familia.resx">
+      <DependentUpon>rpt_materiales_familia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_matriz_items.resx">
+      <DependentUpon>rpt_matriz_items.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_movim_stock_item.resx">
+      <DependentUpon>rpt_movim_stock_item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_mv_stock_general.resx">
+      <DependentUpon>rpt_mv_stock_general.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_nota_pedido.resx">
+      <DependentUpon>rpt_nota_pedido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_pedidos_en_produccion.resx">
+      <DependentUpon>rpt_pedidos_en_produccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_pedidos_recibidos_familia.resx">
+      <DependentUpon>rpt_pedidos_recibidos_familia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_pedidos_recibidos.resx">
+      <DependentUpon>rpt_pedidos_recibidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_pedido_cliente.resx">
+      <DependentUpon>rpt_pedido_cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_produccion_por_fecha.resx">
+      <DependentUpon>rpt_produccion_por_fecha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_produccion_ranking_emp.resx">
+      <DependentUpon>rpt_produccion_ranking_emp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_ranking_compras.resx">
+      <DependentUpon>rpt_ranking_compras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_ranking_global_proveedores.resx">
+      <DependentUpon>rpt_ranking_global_proveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_ranking_venta.resx">
+      <DependentUpon>rpt_ranking_venta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_recibo.resx">
+      <DependentUpon>rpt_recibo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_resumen_caja.resx">
+      <DependentUpon>rpt_resumen_caja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_resumen_mensual.resx">
+      <DependentUpon>rpt_resumen_mensual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_stock_valorizado.resx">
+      <DependentUpon>rpt_stock_valorizado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_vta_detalle_de_ventas_por_familia.resx">
+      <DependentUpon>rpt_vta_detalle_de_ventas_por_familia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_cmp_detalle_por_fecha.resx">
+      <DependentUpon>rpt_cmp_detalle_por_fecha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_vta_detalle_ventas_por_proveedor.resx">
+      <DependentUpon>rpt_vta_detalle_ventas_por_proveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_vta_por_clientes.resx">
+      <DependentUpon>rpt_vta_por_clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_vta_por_condicion.resx">
+      <DependentUpon>rpt_vta_por_condicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_vta_por_fecha.resx">
+      <DependentUpon>rpt_vta_por_fecha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_vta_por_vendedores.resx">
+      <DependentUpon>rpt_vta_por_vendedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_ventas_vs_costo.resx">
+      <DependentUpon>rpt_ventas_vs_costo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_vta_resumen_ventas_por_proveedor.resx">
+      <DependentUpon>rpt_vta_resumen_ventas_por_proveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_vta_resumen_ventas_por_proveedor_familia.resx">
+      <DependentUpon>rpt_vta_resumen_ventas_por_proveedor_familia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\rpt_vta_ventas_formas_pago.resx">
+      <DependentUpon>rpt_vta_ventas_formas_pago.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="bin\Debug\Luk.exe.config" />
+    <None Include="data_set\dts_articulos_familia.xsc">
+      <DependentUpon>dts_articulos_familia.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_articulos_familia.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_articulos_familia.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="data_set\dts_articulos_familia.xss">
+      <DependentUpon>dts_articulos_familia.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_asignacion_emp_ped.xsc">
+      <DependentUpon>dts_asignacion_emp_ped.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_asignacion_emp_ped.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_asignacion_emp_ped.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="data_set\dts_asignacion_emp_ped.xss">
+      <DependentUpon>dts_asignacion_emp_ped.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_cobros_caja.xsc">
+      <DependentUpon>dts_cobros_caja.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_cobros_caja.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_cobros_caja.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="data_set\dts_cobros_caja.xss">
+      <DependentUpon>dts_cobros_caja.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_codigo_barras.xsc">
+      <DependentUpon>dts_codigo_barras.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_codigo_barras.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_codigo_barras.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="data_set\dts_codigo_barras.xss">
+      <DependentUpon>dts_codigo_barras.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_compras.xsc">
+      <DependentUpon>dts_compras.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_compras.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_compras.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="data_set\dts_compras.xss">
+      <DependentUpon>dts_compras.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_compras_detalle.xsc">
+      <DependentUpon>dts_compras_detalle.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_compras_detalle.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_compras_detalle.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="data_set\dts_compras_detalle.xss">
+      <DependentUpon>dts_compras_detalle.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_denominaciones.xsc">
+      <DependentUpon>dts_denominaciones.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_denominaciones.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_denominaciones.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="data_set\dts_denominaciones.xss">
+      <DependentUpon>dts_denominaciones.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_empleados_pedido.xsc">
+      <DependentUpon>dts_empleados_pedido.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_empleados_pedido.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_empleados_pedido.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="data_set\dts_empleados_pedido.xss">
+      <DependentUpon>dts_empleados_pedido.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_existencia_stock_items.xsc">
+      <DependentUpon>dts_existencia_stock_items.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_existencia_stock_items.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_existencia_stock_items.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="data_set\dts_existencia_stock_items.xss">
+      <DependentUpon>dts_existencia_stock_items.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_formas_pago.xsc">
+      <DependentUpon>dts_formas_pago.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_formas_pago.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_formas_pago.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="data_set\dts_formas_pago.xss">
+      <DependentUpon>dts_formas_pago.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_items_compra.xsc">
+      <DependentUpon>dts_items_compra.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_items_compra.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_items_compra.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="data_set\dts_items_compra.xss">
+      <DependentUpon>dts_items_compra.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_items_venta.xsc">
+      <DependentUpon>dts_items_venta.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_items_venta.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_items_venta.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="data_set\dts_items_venta.xss">
+      <DependentUpon>dts_items_venta.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_liquidaciones_mano_obra.xsc">
+      <DependentUpon>dts_liquidaciones_mano_obra.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_liquidaciones_mano_obra.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_liquidaciones_mano_obra.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="data_set\dts_liquidaciones_mano_obra.xss">
+      <DependentUpon>dts_liquidaciones_mano_obra.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_liquidacion_vendedores.xsc">
+      <DependentUpon>dts_liquidacion_vendedores.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_liquidacion_vendedores.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_liquidacion_vendedores.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="data_set\dts_liquidacion_vendedores.xss">
+      <DependentUpon>dts_liquidacion_vendedores.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_material_familia.xsc">
+      <DependentUpon>dts_material_familia.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_material_familia.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_material_familia.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="data_set\dts_material_familia.xss">
+      <DependentUpon>dts_material_familia.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_movim_stock_item.xsc">
+      <DependentUpon>dts_movim_stock_item.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_movim_stock_item.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_movim_stock_item.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="data_set\dts_movim_stock_item.xss">
+      <DependentUpon>dts_movim_stock_item.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_mv_stock_general.xsc">
+      <DependentUpon>dts_mv_stock_general.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_mv_stock_general.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_mv_stock_general.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="data_set\dts_mv_stock_general.xss">
+      <DependentUpon>dts_mv_stock_general.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_nota_pedido.xsc">
+      <DependentUpon>dts_nota_pedido.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_nota_pedido.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_nota_pedido.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="data_set\dts_nota_pedido.xss">
+      <DependentUpon>dts_nota_pedido.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_pedidos.xsc">
+      <DependentUpon>dts_pedidos.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_pedidos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_pedidos.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="data_set\dts_pedidos.xss">
+      <DependentUpon>dts_pedidos.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_pedidos_en_produccion.xsc">
+      <DependentUpon>dts_pedidos_en_produccion.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_pedidos_en_produccion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_pedidos_en_produccion.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="data_set\dts_pedidos_en_produccion.xss">
+      <DependentUpon>dts_pedidos_en_produccion.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_produccion.xsc">
+      <DependentUpon>dts_produccion.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_produccion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_produccion.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="data_set\dts_produccion.xss">
+      <DependentUpon>dts_produccion.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_ranking_compras.xsc">
+      <DependentUpon>dts_ranking_compras.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_ranking_compras.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_ranking_compras.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="data_set\dts_ranking_compras.xss">
+      <DependentUpon>dts_ranking_compras.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_ranking_ventas.xsc">
+      <DependentUpon>dts_ranking_ventas.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_ranking_ventas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_ranking_ventas.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="data_set\dts_ranking_ventas.xss">
+      <DependentUpon>dts_ranking_ventas.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_resumen_mensual.xsc">
+      <DependentUpon>dts_resumen_mensual.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_resumen_mensual.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_resumen_mensual.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="data_set\dts_resumen_mensual.xss">
+      <DependentUpon>dts_resumen_mensual.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_ventas.xsc">
+      <DependentUpon>dts_ventas.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_ventas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_ventas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="data_set\dts_ventas.xss">
+      <DependentUpon>dts_ventas.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_ventas_proveedor.xsc">
+      <DependentUpon>dts_ventas_proveedor.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_ventas_proveedor.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_ventas_proveedor.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="data_set\dts_ventas_proveedor.xss">
+      <DependentUpon>dts_ventas_proveedor.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_ventas_vs_costo.xsc">
+      <DependentUpon>dts_ventas_vs_costo.xsd</DependentUpon>
+    </None>
+    <None Include="data_set\dts_ventas_vs_costo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dts_ventas_vs_costo.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="data_set\dts_ventas_vs_costo.xss">
+      <DependentUpon>dts_ventas_vs_costo.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\DataSources\dts_ventas.dt_ventasDataTable.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="logo_splash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="logistics-delivery-truck-in-movement %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\Luk.vbproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\Luk.vbprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\luk_termos.vbproj.GenerateResource.Cache" />
+    <None Include="production-plant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hammer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Luk.exe" />
+    <Content Include="bin\Debug\Luk.pdb" />
+    <Content Include="imagenes\muestra-terere.png" />
+    <Content Include="imagenes\termo.jpg" />
+    <Content Include="Luk.vbproj.vspscc" />
+    <Content Include="obj\Debug\Luk.exe" />
+    <Content Include="obj\Debug\luk.exe.licenses" />
+    <Content Include="obj\Debug\Luk.pdb" />
+    <Content Include="obj\Debug\Luk.vbproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\luk_termos.exe" />
+    <Content Include="obj\Debug\luk_termos.exe.licenses" />
+    <Content Include="obj\Debug\luk_termos.pdb" />
+    <Content Include="obj\Debug\luk_termos.vbproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\TempPE\.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\DataSet1.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\DataSetVentas.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_articulos_familia.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_asignacion_emp_ped.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_cobros_caja.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_codigo_barras.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_compras.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_denominaciones.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_empleados_pedido.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_existencia_stock_items.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_items_compra.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_items_venta.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_liquidaciones_mano_obra.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_liquidacion_vendedores.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_material_familia.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_movim_stock_item.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_mv_stock_general.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_nota_pedido.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_pedidos.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_pedidos_en_produccion.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_produccion.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_ranking_compras.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_ranking_ventas.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_resumen_mensual.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_ventas.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_ventas1.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_ventas_proveedor.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\data_set.dts_ventas_vs_costo.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\My Project.Resources.Designer.vb.dll" />
+    <Content Include="obj\Debug\TempPE\temp.txt" />
+    <Content Include="Resources\barcode2_16x16.png" />
+    <Content Include="Resources\barcode2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

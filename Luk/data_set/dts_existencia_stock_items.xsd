@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dts_existencia_stock_items" targetNamespace="http://tempuri.org/dts_existencia_stock_items.xsd" xmlns:mstns="http://tempuri.org/dts_existencia_stock_items.xsd" xmlns="http://tempuri.org/dts_existencia_stock_items.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dts_existencia_stock_items" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dts_existencia_stock_items" msprop:Generator_UserDSName="dts_existencia_stock_items">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dt_stock" msprop:Generator_TableClassName="dt_stockDataTable" msprop:Generator_TableVarName="tabledt_stock" msprop:Generator_RowChangedName="dt_stockRowChanged" msprop:Generator_TablePropName="dt_stock" msprop:Generator_RowDeletingName="dt_stockRowDeleting" msprop:Generator_RowChangingName="dt_stockRowChanging" msprop:Generator_RowEvHandlerName="dt_stockRowChangeEventHandler" msprop:Generator_RowDeletedName="dt_stockRowDeleted" msprop:Generator_RowClassName="dt_stockRow" msprop:Generator_UserTableName="dt_stock" msprop:Generator_RowEvArgName="dt_stockRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="codigo" msprop:Generator_ColumnVarNameInTable="columncodigo" msprop:Generator_ColumnPropNameInRow="codigo" msprop:Generator_ColumnPropNameInTable="codigoColumn" msprop:Generator_UserColumnName="codigo" type="xs:string" minOccurs="0" />
+              <xs:element name="item" msprop:Generator_ColumnVarNameInTable="columnitem" msprop:Generator_ColumnPropNameInRow="item" msprop:Generator_ColumnPropNameInTable="itemColumn" msprop:Generator_UserColumnName="item" type="xs:string" minOccurs="0" />
+              <xs:element name="familia" msprop:Generator_ColumnVarNameInTable="columnfamilia" msprop:Generator_ColumnPropNameInRow="familia" msprop:Generator_ColumnPropNameInTable="familiaColumn" msprop:Generator_UserColumnName="familia" type="xs:string" minOccurs="0" />
+              <xs:element name="proveedor" msprop:Generator_ColumnVarNameInTable="columnproveedor" msprop:Generator_ColumnPropNameInRow="proveedor" msprop:Generator_ColumnPropNameInTable="proveedorColumn" msprop:Generator_UserColumnName="proveedor" type="xs:string" minOccurs="0" />
+              <xs:element name="existencia" msprop:Generator_ColumnVarNameInTable="columnexistencia" msprop:Generator_ColumnPropNameInRow="existencia" msprop:Generator_ColumnPropNameInTable="existenciaColumn" msprop:Generator_UserColumnName="existencia" type="xs:string" minOccurs="0" />
+              <xs:element name="costo_unitario" msprop:Generator_ColumnVarNameInTable="columncosto_unitario" msprop:Generator_ColumnPropNameInRow="costo_unitario" msprop:Generator_ColumnPropNameInTable="costo_unitarioColumn" msprop:Generator_UserColumnName="costo_unitario" type="xs:string" minOccurs="0" />
+              <xs:element name="costo_total" msprop:Generator_ColumnVarNameInTable="columncosto_total" msprop:Generator_ColumnPropNameInRow="costo_total" msprop:Generator_ColumnPropNameInTable="costo_totalColumn" msprop:Generator_UserColumnName="costo_total" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

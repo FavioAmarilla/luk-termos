@@ -1,0 +1,3 @@
+﻿Public Class rpt_vta_detalle_ventas_por_proveedor
+
+End Class

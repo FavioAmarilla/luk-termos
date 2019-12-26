@@ -1,0 +1,3 @@
+﻿Public Class rpt_vta_detalle_de_ventas_por_familia
+
+End Class

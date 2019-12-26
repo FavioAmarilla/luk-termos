@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dts_liquidacion_vendedores" targetNamespace="http://tempuri.org/dts_liquidacion_vendedores.xsd" xmlns:mstns="http://tempuri.org/dts_liquidacion_vendedores.xsd" xmlns="http://tempuri.org/dts_liquidacion_vendedores.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dts_liquidacion_vendedores" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dts_liquidacion_vendedores" msprop:Generator_UserDSName="dts_liquidacion_vendedores">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dt_liquidaciones" msprop:Generator_TableClassName="dt_liquidacionesDataTable" msprop:Generator_TableVarName="tabledt_liquidaciones" msprop:Generator_TablePropName="dt_liquidaciones" msprop:Generator_RowDeletingName="dt_liquidacionesRowDeleting" msprop:Generator_RowChangingName="dt_liquidacionesRowChanging" msprop:Generator_RowEvHandlerName="dt_liquidacionesRowChangeEventHandler" msprop:Generator_RowDeletedName="dt_liquidacionesRowDeleted" msprop:Generator_UserTableName="dt_liquidaciones" msprop:Generator_RowChangedName="dt_liquidacionesRowChanged" msprop:Generator_RowEvArgName="dt_liquidacionesRowChangeEvent" msprop:Generator_RowClassName="dt_liquidacionesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fecha_cre" msprop:Generator_ColumnVarNameInTable="columnfecha_cre" msprop:Generator_ColumnPropNameInRow="fecha_cre" msprop:Generator_ColumnPropNameInTable="fecha_creColumn" msprop:Generator_UserColumnName="fecha_cre" type="xs:string" minOccurs="0" />
+              <xs:element name="numero" msprop:Generator_ColumnVarNameInTable="columnnumero" msprop:Generator_ColumnPropNameInRow="numero" msprop:Generator_ColumnPropNameInTable="numeroColumn" msprop:Generator_UserColumnName="numero" type="xs:string" minOccurs="0" />
+              <xs:element name="total_venta" msprop:Generator_ColumnVarNameInTable="columntotal_venta" msprop:Generator_ColumnPropNameInRow="total_venta" msprop:Generator_ColumnPropNameInTable="total_ventaColumn" msprop:Generator_UserColumnName="total_venta" type="xs:string" minOccurs="0" />
+              <xs:element name="comision" msprop:Generator_ColumnVarNameInTable="columncomision" msprop:Generator_ColumnPropNameInRow="comision" msprop:Generator_ColumnPropNameInTable="comisionColumn" msprop:Generator_UserColumnName="comision" type="xs:string" minOccurs="0" />
+              <xs:element name="total" msprop:Generator_ColumnVarNameInTable="columntotal" msprop:Generator_ColumnPropNameInRow="total" msprop:Generator_ColumnPropNameInTable="totalColumn" msprop:Generator_UserColumnName="total" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,3 @@
+﻿Public Class rpt_vta_resumen_ventas_por_proveedor_familia
+
+End Class

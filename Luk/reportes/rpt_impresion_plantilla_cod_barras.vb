@@ -1,0 +1,3 @@
+﻿Public Class rpt_impresion_plantilla_cod_barras
+
+End Class
